@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MOCK_USERS, type User } from '../types';
+import { MOCK_USERS } from '../mockData';
 
 export function Users() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -60,7 +60,7 @@ export function Users() {
           </thead>
           <tbody>
             {filteredUsers.length > 0 ? (
-              filteredUsers.map((user: User) => (
+              filteredUsers.map((user) => (
                 <tr key={user.id}>
                   <td>#{user.id}</td>
                   <td>

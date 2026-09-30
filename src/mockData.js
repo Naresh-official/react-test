@@ -1,13 +1,4 @@
-export interface User {
-  id: number;
-  name: string;
-  email: string;
-  role: string;
-  status: 'Active' | 'Inactive' | 'Pending';
-  bio: string;
-}
-
-export const MOCK_USERS: User[] = [
+export const MOCK_USERS = [
   {
     id: 1,
     name: 'Alice Johnson',

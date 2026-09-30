@@ -18,7 +18,7 @@ export function About() {
             <strong>Frontend Library:</strong> React 19 + React DOM
           </li>
           <li>
-            <strong>Language:</strong> TypeScript (strict type checking enabled)
+            <strong>Language:</strong> JavaScript (ES Modules)
           </li>
           <li>
             <strong>Routing:</strong> React Router DOM with nested layout and dynamic routing
@@ -35,7 +35,7 @@ export function About() {
 {`# Start local development server
 npm run dev
 
-# Run TypeScript check & build for production
+# Build for production
 npm run build
 
 # Preview production build locally

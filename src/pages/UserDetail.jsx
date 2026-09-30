@@ -1,8 +1,8 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { MOCK_USERS } from '../types';
+import { MOCK_USERS } from '../mockData';
 
 export function UserDetail() {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const userId = Number(id);

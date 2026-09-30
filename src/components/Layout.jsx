@@ -9,7 +9,7 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="footer">
-        <p>© {new Date().getFullYear()} React Test Project • Vite + React + TypeScript</p>
+        <p>© {new Date().getFullYear()} React Test Project • Vite + React</p>
       </footer>
     </div>
   );

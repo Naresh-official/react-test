@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Home() {
-  const [count, setCount] = useState<number>(0);
-  const [feedback, setFeedback] = useState<string>('');
+  const [count, setCount] = useState(0);
+  const [feedback, setFeedback] = useState('');
 
   return (
     <div className="page home-page">
       <section className="hero-section">
         <h1 className="hero-title">🚀 Welcome to React Vite Test</h1>
         <p className="hero-subtitle">
-          A lightweight, clean testbed built with Vite, React 19, TypeScript, and React Router.
+          A lightweight, clean testbed built with Vite, React 19, JavaScript, and React Router.
         </p>
         <div className="hero-cta">
           <Link to="/dashboard" className="btn btn-primary">

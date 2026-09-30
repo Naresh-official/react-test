@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export function Dashboard() {
-  const [timeRange, setTimeRange] = useState<'24h' | '7d' | '30d'>('7d');
+  const [timeRange, setTimeRange] = useState('7d');
 
   const stats = [
     { label: 'Total Requests', value: timeRange === '24h' ? '12,450' : timeRange === '7d' ? '86,300' : '342,100', change: '+12.5%' },
@@ -18,7 +18,7 @@ export function Dashboard() {
           <p className="page-description">Sample metric cards and interactive UI toggles.</p>
         </div>
         <div className="filter-group">
-          {(['24h', '7d', '30d'] as const).map((range) => (
+          {['24h', '7d', '30d'].map((range) => (
             <button
               key={range}
               className={`filter-pill ${timeRange === range ? 'active' : ''}`}
@@ -51,8 +51,8 @@ export function Dashboard() {
               <span className="status-badge active">Online</span>
             </li>
             <li>
-              <span>TypeScript Checker</span>
-              <span className="status-badge active">Strict</span>
+              <span>JavaScript Runtime</span>
+              <span className="status-badge active">Pure ESM</span>
             </li>
             <li>
               <span>React Router DOM</span>
